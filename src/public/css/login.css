@@ -1,0 +1,25 @@
+header {
+    background-color: rgb(20, 35, 95);
+}
+
+h1{
+    text-align:center; color: white;
+}
+
+.container{
+    /*width: 50%;
+    padding: 70px 150px;
+    margin: 15px 25%;*/
+}
+
+label {
+    font-size: 18px;
+}
+
+.btn {
+    max-width: 510px;
+}
+
+.a-right {
+    color: rgb(109, 109, 109);
+}

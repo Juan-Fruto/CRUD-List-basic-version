@@ -1,0 +1,31 @@
+<br><br>
+<div class="container mt-3">
+     <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="card card-body p-4 rounded-3">
+                <div class="mt-5 mb-4 me-5 ms-5">
+                    <form action="/login" method="POST">
+                        <div class="row g-3 pb-lg-2">
+                            <label for="username" class="col-md-3">User:</label>
+                            <input type="text" class="col-md-9" name="username" placeholder="User name or email" maxlength="30" value="{{username}}">
+                        </div><br>
+                        <div class="row g-3 pb-lg-2">
+                            <label for="password" class="col-md-3">Password:</label>
+                            <input type="password" class="col-md-9" name="password" placeholder="Password" maxlength="30"><br/><br/>
+                        </div><br>
+                        <div class="row g-3">
+                            <input type="submit" class="btn btn-outline-primary" value="Login" id="loginlogin_button">
+                        </div>
+                    </form><br>
+                    <div class="row">
+                        <a href="/register" class="col-md-5">Create an account</a>
+                        <div class="col-md-7">
+                            <a href="/recover" class="a-right"><p class="text-end">Forgot password? recover it</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>   
+</div>
+

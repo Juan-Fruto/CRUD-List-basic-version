@@ -1,0 +1,50 @@
+<div class="container p-10 m-10 align-center-items">
+    <form class="row g-3 needs-validation" action="/register" method="POST">
+        
+        <div class="col-md-3">
+            <label for="validationCustom01" class="form-label" for="names">Name(s)</label>
+            <input type="text" class="form-control" name="names" id="names" value="{{names}}" placeholder="All names">
+        </div>
+
+        <div class ="col-md-1"></div>
+
+        <div class="col-md-3">
+            <label for="validationCustom02" class="form-label" for="lastName">Last name</label>
+            <input type="text" class="form-control" name="lastName" value="{{lastName}}" id="lastName">
+        </div>
+
+        <div class ="col-md-1"></div>
+
+         <div class="col-md-3">
+            <label for="validationCustom04" class="form-label" for="email">Email</label>
+            <input type="email" class="form-control" name="email" value="{{email}}">
+        </div>
+
+        <div class="col-md-3">
+            <label for="validationCustomUsername" class="form-label" for="username">Username</label>
+            <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">#</span>
+                <input type="text" class="form-control" name="username" id="username" value="{{username}}" placeholder="account number">
+            </div>
+        </div>
+
+        <div class ="col-md-1"></div>
+
+        <div class="col-md-3">
+            <label for="validationCustom03" class="form-label" for="password">Password</label>
+            <input type="password" class="form-control" name="password" id="password">
+        </div>
+
+        <div class ="col-md-1"></div>
+
+        <div class="col-md-3">
+            <label class="form-label" for="confirmPassword">Confirm password</label>
+            <input type="password" class="form-control" name="confirmPassword" id="confirmPassword">
+        </div>
+
+        <div class="col-md-12">
+            <br>
+            <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+    </form>
+</div>

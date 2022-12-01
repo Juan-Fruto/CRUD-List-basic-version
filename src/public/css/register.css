@@ -1,0 +1,11 @@
+header {
+    background-color: rgb(20, 35, 95); height: 60px;
+}
+
+img {
+    width: 35px; padding-top: 12px;
+}
+
+.placeholder {
+    color: rgb(108, 117, 125);
+}

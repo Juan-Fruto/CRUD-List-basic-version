@@ -1,0 +1,71 @@
+<link rel="stylesheet" href="../css/crud.css">
+
+
+                
+<h1 class="text-center mb-0 mt-5">CRUD page</h1>
+
+<form action="/students/add", method="POST">
+    <hr/ class="mb-4 mt-1">
+    <div class="row">
+        <div class="col-md-5">
+            <label for="name" class="form-label fw-bold">Writte the name:</label>
+            <input type="text" class="form-control" name="name" id="name" placeholder="name">
+        </div>
+        <div class="col-md-3">
+            <label for="subject_grade" class="form-label fw-bold">Writte the grade:</label>
+            <input type="number" class="form-control" step="0.1" name="subject_grade" id="grade" placeholder="subject grade">
+        </div>
+        <div class="form-check form-switch col-md-2">
+            <label for="status" class="form-label fw-bold">Select the status:</label><br/>
+            <input type="checkbox" class="form-check-input" name="status" title="Select the student's academic status, whether regitered or deregistered">
+            <span class="labels" data-on="registered" data-off="deregistered"></span>
+        </div><br>
+        <div class="d-grid gap-4 col-md-2 mx-auto">
+            <div class="form-label"></div>
+            <button class="btn btn-primary">Add</button>
+        </div>
+        <div class="col-md-12"></div>
+    </div>
+</form>
+
+{{!-- table table-info table-bordered table-striped m-5 mt-0 mb-0 --}}
+
+<div class="container-md">
+        <table class="table table-md table-info table-striped mt-0">
+            <caption class="visually-hidden">student list</caption>
+            <thead>
+                <tr class="table-dark">
+                    <th class="td-name" scope="col">Name</th>
+                    <th class="td-grade" scope="col">Subject grade</th>
+                    <th class="td-status" scope="col">Status</th>
+                    <th class="td-actions-1" scope="col">Actions</th>
+                    <th class="td-actions-2" scope="col"></th>
+                    <th class="td-actions-3" scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each document}}
+                <tr>
+                    <td>{{name}}</td>
+                    <td>{{subject_grade}}</td>
+                    <td>
+                        {{#if status}}
+                            registered
+                        {{else}}
+                            de-registered
+                        {{/if}}
+                    </td>
+                    <td><a href="/students/{{_id}}/edit" class="edit">Edit</a></td>
+                    <td><a href="/students/{{_id}}/delete" class="delete" onclick="return confirm('Are you sure to delete {{name}} from the list?');">Delete</a></td><br>
+                    {{#if status}}
+                        <td class="status"></td>
+                    {{else}}
+                        <td class= "status">
+                            <button role="complementary" class="btn-status" title="this student is de-registered"></button>
+                        </td>
+                    {{/if}}
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+</div>

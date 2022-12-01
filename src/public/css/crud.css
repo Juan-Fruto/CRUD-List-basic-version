@@ -1,0 +1,101 @@
+form {
+    width: 80%;
+    padding: 40px 105px;
+    margin: 0px 10%;
+    margin-bottom: -70px;
+}
+
+.col-md-3 {
+    float: left;
+}
+
+.form-check {
+    float: left;
+    padding-left: 10px;
+}
+
+.form-check .form-check-input {
+    margin-left: 0px;
+    width: 130px;
+    height: 35px;
+    border-radius: 8%;
+}
+
+.table-responsive {
+    max-width: 80%;
+    padding: 40px 105px;
+    margin: -120px 100px;
+}
+
+th {
+    font-weight: normal;
+}
+
+.container-md {
+    width: 960px;
+    height: 500px;
+    padding-top: 110px;
+}
+
+.table {
+    padding-top: 0px;
+    margin-top: 0%;
+    max-width: 99.9%;
+}
+
+.status {
+    width: 1px;
+    background-color: rgb(220, 220, 220);
+}
+
+.btn-status {
+    border-radius: 50%;
+    background-color: orange;
+    width: 15px; height: 15px;
+    border: none;
+}
+
+.td-name {
+    width: 30%;
+}
+
+.td-grade {
+    width: 16%;
+}
+
+.td-status {
+    width: 19%;
+}
+
+.td-actions-1 {
+    width: 12.1%;
+    
+}
+.td-actions-2 {
+    width: 12.1%;
+    
+}
+.td-actions-3 {
+    width: 3%;
+    
+}
+
+.edit {
+    color: rgb(0, 144, 0);
+}
+
+.edit:hover{
+    color: rgb(1, 94, 1);
+}
+
+.delete {
+    color: rgb(224, 0, 0);
+}
+
+.delete:hover {
+    color: rgb(150, 0, 0);
+}
+
+br {
+    display: none;
+}

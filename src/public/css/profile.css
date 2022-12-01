@@ -1,0 +1,11 @@
+.col-md-9 .form-control {
+    /* background-color: rgb(248, 248, 248); */
+    background-color: rgb(244, 244, 244);
+    /* border: none; */
+}
+
+.col-md-3 .form-control{
+    border-width: 2px;
+    border-color: rgb(248, 248, 248);
+    /* border-color: rgb(197, 196, 196); */
+}

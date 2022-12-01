@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="../css/home.css">
+
+<div class="container-md mt-5">
+{{!-- 
+    ciclo for que recorra la coleccion grupos, agregar un contador, si el contador llega a 6 que se haga un nuevo
+    row
+    puedo pasar una coleccion en forma de lista al hbs y asi recorrerla --}}
+    <div class="row">
+        {{#each groups}}
+        <div class="col-md-1">
+            <a href="/list/{{this}}"><button class="group">{{this}}</button></a>
+        </div>
+        {{/each}}
+
+        <form action="/home/group/{{userId}}" method="get" class="col-md-1 p-0">
+        <button class="add p-4">
+            <img src="../images/add_dark.png" role="button" alt="add" title="add" class="group">
+        </button>
+    </form>
+    </div>  
+</div>
